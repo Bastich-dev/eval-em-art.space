@@ -41,15 +41,15 @@
   color: rgba(255, 255, 255, 0.8);
   font-family: "Times New Roman";
   font-style: italic;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 #get_started button {
   cursor: pointer;
-  font-size: 14px;
-  padding: 10px 25px;
+  font-size: 20px;
+  padding: 20px 27px;
   transition: 0.3s;
-  border-radius: 25px;
+  border-radius: 40px;
   margin: 20px;
 }
 
@@ -65,6 +65,7 @@
   background: none;
   box-shadow: none;
   background-color: var(--color_other_secondary);
+  transform: scale(1.05);
 }
 
 #get_started .button_right {
@@ -80,6 +81,7 @@
   background: none;
   box-shadow: none;
   background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
 }
 
 #get_started .button_right img {
@@ -105,7 +107,7 @@
 }
 
 #press h3 {
-  max-width: 200px;
+  max-width: 100px;
   max-height: 40px;
   font-size: 10px;
   letter-spacing: 1.2pt;
@@ -114,7 +116,7 @@
 }
 
 #press img {
-  max-width: 15%;
+  max-width: 12%;
   max-height: 40px;
   margin: 2%;
 }
@@ -122,8 +124,13 @@
 /* COMMON ARTICLES */
 
 article {
-  height: calc(100vh - 50px);
-  padding-top: 50px;
+  /* height: calc(100vh - 50px); */
+  padding: 50px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.grey {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 article h2 {
@@ -133,22 +140,64 @@ article h2 {
 }
 
 article hr {
-  width: 20%;
-  margin: 0 40%;
+  width: 30%;
+  margin: 0 35%;
   height: 3px;
   background-color: black;
 }
 
 article p {
   text-align: center;
-  max-width: 700px;
+  max-width: 500px;
   margin: 20px auto;
-  padding: 0 20px;
+  padding: 0;
   font-size: calc(0.8vh + 0.5vw);
   color: rgba(0, 0, 0, 0.6);
 }
 
-article div {
-  height: 70vh;
-  background-color: red;
+.left h2 {
+  text-align: left;
+}
+.left hr {
+  margin: 0;
+}
+
+.left p {
+  text-align: left;
+  margin: 20px 0;
+}
+
+/* CAROUSEL BLOG  */
+
+#carousel_blog figure {
+  margin: 0;
+  padding: 0;
+}
+
+#carousel_blog figcaption {
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 10px 0;
+}
+
+#carousel_blog div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 1200px) {
+  #carousel_blog div {
+    justify-content: space-around;
+  }
+}
+
+#carousel_blog div section {
+  width: 400px;
+}
+
+#carousel_blog div section img {
+  width: 24px;
+  height: 24px;
 }

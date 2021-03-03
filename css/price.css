@@ -25,10 +25,10 @@
 
 #get_started button {
   cursor: pointer;
-  font-size: 14px;
-  padding: 10px 25px;
+  font-size: 20px;
+  padding: 20px 27px;
   transition: 0.3s;
-  border-radius: 25px;
+  border-radius: 40px;
   margin: 20px;
   color: white;
   background-color: black;
@@ -44,6 +44,7 @@
   box-shadow: none;
   color: black;
   background-color: white;
+  transform: scale(1.05);
 }
 
 /* PRICES */
@@ -56,6 +57,15 @@
   margin: 40px 0;
   width: 400px;
   background-color: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 10px 10px 108px -42px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 108px -42px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 108px -42px rgba(0, 0, 0, 0.75);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#prices article:hover {
+  transform: scale(1.05);
 }
 
 #prices article hr {
@@ -103,7 +113,7 @@
 
 #prices article li {
   color: rgba(0, 0, 0, 0.8);
-  height: 40px;
+  height: 50px;
   font-size: 14px;
   border-bottom: 1px solid silver;
 }
@@ -133,6 +143,12 @@
   text-align: center;
 }
 
+@media (max-width: 1200px) {
+  #prices article .badge {
+    left: 0px;
+  }
+}
+
 /* QUESTIONS */
 
 #questions {
@@ -141,6 +157,7 @@
 
 #questions article {
   width: 400px;
+  cursor: default;
 }
 
 #questions article h3 {
@@ -150,9 +167,21 @@
   padding-bottom: 5px;
 }
 
+#questions article:hover p {
+  transform: scale(1.08);
+  color: black;
+}
+
 #questions article p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 12px;
+  transition: 0.4s;
+}
+
+@media (max-width: 1200px) {
+  #questions article p {
+    margin: 0 15px;
+  }
 }
 
 #questions article strong {

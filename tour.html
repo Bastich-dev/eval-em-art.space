@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Abel&family=Cairo:wght@600&family=Catamaran:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/constants.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/tour.css" />
@@ -20,10 +24,10 @@
         <nav>
           <ul class="flex-center">
             <li><a class="current_link" href="tour.html">TOUR</a></li>
-            <li><a href="templates.html">TEMPLATES</a></li>
-            <li><a href="developers.html">DEVELOPERS</a></li>
+            <li><a href="#">TEMPLATES</a></li>
+            <li><a href="#">DEVELOPERS</a></li>
             <li><a href="price.html">PRICING</a></li>
-            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="#">LOGIN</a></li>
           </ul>
         </nav>
       </div>
@@ -58,7 +62,7 @@
         <div class="grey_layout"></div>
       </section>
 
-      <article id="carousel_tv">
+      <article id="carousel_tv" class="centered">
         <h2>STUNNING DESIGNS FROM THE START</h2>
         <hr />
         <p>
@@ -66,9 +70,209 @@
           each handcrafted by our award-winning design team to make your content
           stand out.
         </p>
-        <div></div>
+        <div
+          class="container flex-center"
+          style="margin-bottom: calc(-80vh + 100px);"
+        >
+          <img
+            src="./assets/large-cinema-display.png"
+            style="height: 80vh; z-index: 5;"
+          />
+
+          <div
+            class="flex-center"
+            style="
+              position: relative;
+              top: calc(-80vh + 30px);
+
+              height: calc(80vh - 100px);
+              width: 100%;
+            "
+          >
+            <div style="background-color: grey; width: 100%; height: 100%;">
+              <div
+                class="swiper-container"
+                style="z-index: 6; width: 116%; margin-left: -8%;"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/slider_start/img1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/slider_start/img2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/slider_start/img3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/slider_start/img4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/slider_start/img5.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/slider_start/img6.png" />
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="pages_galleries" class="centered grey">
+        <h2>
+          PAGES, GALLERIES, AND BLOGS.
+          <br />
+          ALL IN ONE PLATFORM
+        </h2>
+        <hr />
+        <p>
+          Whether you need simple pages, sophisticated galleries, or a
+          professionnal blog - or any combination of each of those - it all
+          comes standard with your website.
+        </p>
+        <div class="container">
+          <img src="./assets/tour/tour-all-in-one.png" style="width: 100%;" />
+        </div>
+      </article>
+
+      <article id="introducing" class="container left">
+        <h2>
+          INTRODUCING LAYOUTENGINE.
+
+          <br />
+          A NEW PAGE BUILDER FROM ARTSPACE.
+        </h2>
+        <hr />
+        <p>
+          Our revolutionary LayoutEngine technology gives you the freedom to
+          create visually rich pages with any configuration of text, images, or
+          blocks by dragging items exactly where you want them. Welay things out
+          in a perfect grid, so everything is always aligned.
+        </p>
+        <div>
+          <img
+            src="./assets/tour/tour-layoutengine-video-poster.jpg"
+            style="width: 100%;"
+          />
+        </div>
+      </article>
+      <article id="galleries" class="container left">
+        <h2>
+          GALLERIES WITH CUTTING-EDGE CREATIVE TOOLS.
+        </h2>
+        <hr />
+        <p>
+          Our photo galleries come with next-generation features you'll love.
+          Enjoy easy uploading by dragging files from your desktop into the
+          browser. Edit images any time you want with Aviary. Select the focal
+          point of each image, ensuring the best crop possible.
+        </p>
+        <div>
+          <img src="./assets/tour/tour-gallery.jpg" style="width: 100%;" />
+        </div>
+      </article>
+
+      <article id="carousel_blog" class="container left">
+        <h2>
+          STATE-OF-THE-ART BLOGGING
+        </h2>
+        <hr />
+        <p>
+          Effortlessly create content with our Page Builder and gallery system.
+          Share easily, map posts with native geolocation, and use our
+          bookmarklet to reblog content from the web.
+        </p>
+        <figure>
+          <img
+            style="width: 100%;"
+            src="./assets/hero-pricing.jpg"
+            alt="Une superbe photo"
+          />
+
+          <figcaption>Blogging management interface.</figcaption>
+        </figure>
+        <div>
+          <section>
+<h3>IMPORT SEAMLESSLY<h3>
+  <p>Start where you left off by importing all of your content from WordPress, Tumblr, Posterous, Blogger, and Squarespace 5.
+    </p> 
+    <ul class='flex-top'>
+      <li> <a href="#"> <img src='./assets/icon/icon-wordpress-24-dark.png' /> </a> </li>
+       <li> <a href="#"> <img src='./assets/icon/icon-wordpress-24-dark.png' /> </a> </li>
+    </ul>
+
+          </section>
+        </div>
+      </article>
+
+      <article id="carousel_blog" class="container left">
+        <h2>
+          THE CUSTOM LOOK YOU WANT.
+        </h2>
+        <hr />
+        <p>
+          Make any template your own with a few clicks in the style editor.
+          Choose a preset color palette or select your own fonts, colors, and
+          layouts to create the custom look you want.
+        </p>
+        <div>
+          <img src="./assets/tour/tour-style-editor.jpg" style="width: 100%;" />
+        </div>
       </article>
     </main>
-    <footer></footer>
+    <footer id="footer" class="container">
+      <section>
+        <h4>PRODUCT</h4>
+        <ul>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="#">Templates</a></li>
+          <li><a href="#">Mobile Apps</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="price.html">Pricing</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press & Media</a></li>
+          <li><a href="#">Environmental Impact</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>COMMUNITY</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Answers</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">Service Updates</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Google +</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </section>
+      <section>
+        <button>TRY IT FREE</button>
+        <p>Free 14-day trial</p>
+        <p>No credit card required</p>
+        <p>24/7 Support</p>
+        <img src="./assets/footer-truste.png" />
+      </section>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./scripts/carousel.js"></script>
   </body>
 </html>
