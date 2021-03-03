@@ -1,0 +1,154 @@
+/* SECTION GET_STARTED */
+#get_started {
+  min-height: 90vh;
+  background-image: url(../assets/hero-tour.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 10%;
+  background-size: 100%;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 60s;
+  animation-name: zoom;
+}
+
+@keyframes zoom {
+  from {
+    background-size: 150%;
+  }
+
+  to {
+    background-size: 100%;
+  }
+}
+
+#get_started hr {
+  margin: 0 30%;
+  width: 40%;
+  height: 5px;
+  background-color: white;
+}
+
+#get_started h1 {
+  color: white;
+  font-weight: 500;
+  font-size: calc(3.5vh + 2.5vw);
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+
+#get_started p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 18px;
+}
+
+#get_started button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 25px;
+  transition: 0.3s;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+#get_started .button_left {
+  background-color: var(--color_other_primary);
+  border: 2px solid var(--color_other_primary);
+  font-weight: 600;
+}
+
+#get_started .button_left:hover,
+#get_started .button_left:focus {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  background-color: var(--color_other_secondary);
+}
+
+#get_started .button_right {
+  color: white;
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-weight: 500;
+}
+
+#get_started .button_right:hover,
+#get_started .button_right:focus {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#get_started .button_right img {
+  margin-left: 10px;
+  width: 25px;
+}
+
+/* PRESS */
+
+#press {
+  display: grid;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#press div {
+  grid-area: 1 / 1;
+}
+
+#press .grey_layout {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#press h3 {
+  max-width: 200px;
+  max-height: 40px;
+  font-size: 10px;
+  letter-spacing: 1.2pt;
+  font-weight: 800;
+  margin: 20px;
+}
+
+#press img {
+  max-width: 15%;
+  max-height: 40px;
+  margin: 2%;
+}
+
+/* COMMON ARTICLES */
+
+article {
+  height: calc(100vh - 50px);
+  padding-top: 50px;
+}
+
+article h2 {
+  text-align: center;
+  font-size: calc(1.5vh + 1vw);
+  font-weight: 500;
+}
+
+article hr {
+  width: 20%;
+  margin: 0 40%;
+  height: 3px;
+  background-color: black;
+}
+
+article p {
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: calc(0.8vh + 0.5vw);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+article div {
+  height: 70vh;
+  background-color: red;
+}

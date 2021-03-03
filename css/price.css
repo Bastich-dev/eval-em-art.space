@@ -1,0 +1,161 @@
+/* SECTION GET_STARTED */
+#get_started {
+  min-height: 70vh;
+  background-image: url(../assets/hero-pricing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 10%;
+}
+
+#get_started hr {
+  margin: 0 30%;
+  width: 40%;
+  height: 5px;
+  background-color: white;
+}
+
+#get_started h1 {
+  color: white;
+  font-weight: 500;
+  font-size: calc(3.5vh + 2.5vw);
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+
+#get_started button {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 25px;
+  transition: 0.3s;
+  border-radius: 25px;
+  margin: 20px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+#get_started button:hover,
+#get_started button:focus {
+  outline: none;
+  background: none;
+  box-shadow: none;
+  color: black;
+  background-color: white;
+}
+
+/* PRICES */
+
+#prices {
+  margin: 40px 0;
+}
+
+#prices article {
+  margin: 40px 0;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#prices article hr {
+  background-color: white;
+  height: 2px;
+  width: 150px;
+  margin: 10px auto 0 auto;
+}
+
+#prices article h2 {
+  color: white;
+  text-align: center;
+  letter-spacing: 3pt;
+  font-weight: 500;
+  margin: 20px auto 0 auto;
+}
+
+#prices article span {
+  color: white;
+  font-size: 108px;
+  font-weight: 200;
+}
+
+#prices article sup,
+#prices article sub {
+  height: 100;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1.2pt;
+}
+
+#prices article p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-style: italic;
+}
+
+#prices article ul {
+  background-color: rgba(255, 255, 255, 0.93);
+  padding: 0;
+  margin: 0;
+}
+
+#prices article li {
+  color: rgba(0, 0, 0, 0.8);
+  height: 40px;
+  font-size: 14px;
+  border-bottom: 1px solid silver;
+}
+
+#prices article i {
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  letter-spacing: 1.2px;
+  background-color: rgb(0, 184, 0);
+  margin-left: 10px;
+  font-style: inherit;
+}
+
+#prices article .badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(0, 184, 0);
+  position: relative;
+  margin-bottom: -60px;
+  top: calc(-60px / 2);
+  left: calc(400px - 60px / 2);
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* QUESTIONS */
+
+#questions {
+  margin-bottom: 50px;
+}
+
+#questions article {
+  width: 400px;
+}
+
+#questions article h3 {
+  width: max-content;
+  display: block;
+  border-bottom: 2px solid rgb(25, 0, 247);
+  padding-bottom: 5px;
+}
+
+#questions article p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+}
+
+#questions article strong {
+  letter-spacing: 1.3px;
+  margin-right: 3px;
+}

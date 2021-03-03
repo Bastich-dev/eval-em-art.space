@@ -1,0 +1,127 @@
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* //// Elements  */
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+header {
+  padding: 1.5% 0;
+}
+
+a {
+  font-weight: bold;
+  letter-spacing: 1.2pt;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+  color: black;
+}
+
+.current_link {
+  color: black;
+}
+
+li {
+  padding: 7px;
+  list-style: none;
+}
+
+/* //// Position of an element in div */
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* //// Positions of multiple elements in div */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-center-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.flex-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.flex-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
