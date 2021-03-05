@@ -105,7 +105,7 @@
     color: rgba(255, 255, 255, 0.4);
     text-align: center;
     font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     padding-bottom: 15px;
 }
 
@@ -128,7 +128,7 @@
     width: 45px;
     height: 45px;
     letter-spacing: 1.2px;
-    background-color: rgb(84, 202, 144);
+    background-color: var(--color_green);
     margin-left: 10px;
     font-style: inherit;
 }
@@ -137,7 +137,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: rgb(84, 202, 144);
+    background-color: var(--color_green);
     position: relative;
     margin-bottom: -60px;
     top: calc(-60px / 2);
@@ -167,7 +167,7 @@
 #questions article h3 {
     width: max-content;
     display: block;
-    border-bottom: 2px solid rgb(25, 0, 247);
+    border-bottom: 2px solid var(--color_primary);
     padding-bottom: 5px;
 }
 
@@ -193,9 +193,6 @@
     margin-right: 3px;
 }
 
-
-
-
 #tooltip {
     position: absolute;
     width: 240px;
@@ -205,31 +202,27 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
     font-size: 14px;
 }
 
-
-
-#tooltip i{
-    font-family: 'Times New Roman', Times, serif;
+#tooltip i {
+    font-family: "Times New Roman", Times, serif;
     font-size: 22px;
     margin: 0 17 0 0;
     font-weight: bold;
 }
 
-#tooltip h4{
-    margin:0;
+#tooltip h4 {
+    margin: 0;
     padding: 0;
     font-weight: 200;
 }
 
-#tooltip p{
-    margin:10 0 0 0;
+#tooltip p {
+    margin: 10 0 0 0;
     color: silver;
     font-weight: 200;
     font-size: 12px;
 }
-
-

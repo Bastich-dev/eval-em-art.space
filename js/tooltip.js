@@ -13,9 +13,9 @@ list.forEach((el)=>{
 tooltip.querySelector('h4').innerText =event.target.innerText
         tooltip.style.top = event.pageY + 15
         tooltip.style.left = event.pageX + 15
-    })
+    }) 
 
-
+   
     
 })
 
@@ -32,5 +32,5 @@ container.forEach((el)=>{
         tooltip.style.display = 'none'
     })
 })
-
+ 
 

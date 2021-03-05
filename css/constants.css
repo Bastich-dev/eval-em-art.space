@@ -1,17 +1,17 @@
 /* Constants */
 
 :root {
-  /* COLOR */
-  --color_primary: rgba(0, 0, 0, 1);
-  --color_secondary: rgba(255, 255, 255, 1);
-  --color_text: rgb(128, 128, 128);
-  --color_button_primary: rgb(255, 241, 134);
-  --color_button_secondary: rgb(255, 230, 40);
+    /* COLOR */
+    --color_primary: rgba(0, 0, 0, 1);
+    --color_secondary: rgba(255, 255, 255, 1);
+    --color_text: rgb(128, 128, 128);
+    --color_button_primary: rgb(255, 241, 134);
+    --color_button_secondary: rgb(255, 230, 40);
+    --color_green: rgb(84, 202, 144);
+    /* FONTS FAMILY */
+    --font_title: "Lato", sans-serif;
 
-  /* FONTS FAMILY */
-  --font_title: "Lato", sans-serif;
-
-  /* SIZES */
-  --fontSize_title:  calc(1.5vh + 1vw);
-  --fontSize_content: 16px;
+    /* SIZES */
+    --fontSize_title: calc(1.5vh + 1vw);
+    --fontSize_content: calc(0.7vh + 0.7vw);
 }
