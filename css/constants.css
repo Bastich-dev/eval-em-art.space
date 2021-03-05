@@ -2,17 +2,16 @@
 
 :root {
   /* COLOR */
-  --color_primary: tomato;
-  --color_secondary: rgb(0, 81, 255);
-  --color_button_primary: rgb(194, 170, 38);
-  --color_button_secondary: rgb(0, 195, 255);
-  --color_other_primary: rgb(255, 241, 134);
-  --color_other_secondary: rgb(255, 230, 40);
+  --color_primary: rgba(0, 0, 0, 1);
+  --color_secondary: rgba(255, 255, 255, 1);
+  --color_text: rgb(128, 128, 128);
+  --color_button_primary: rgb(255, 241, 134);
+  --color_button_secondary: rgb(255, 230, 40);
 
   /* FONTS FAMILY */
   --font_title: "Lato", sans-serif;
 
   /* SIZES */
-  --fontSize_title: 20px;
+  --fontSize_title:  calc(1.5vh + 1vw);
   --fontSize_content: 16px;
 }

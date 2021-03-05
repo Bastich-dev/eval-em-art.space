@@ -1,6 +1,6 @@
-.uppercase {
-  text-transform: uppercase;
-}
+/* ===========================
+Container
+ ============================ */
 
 .container {
   padding-left: 300px;
@@ -28,15 +28,11 @@
   }
 }
 
-/* //// Elements  */
-a {
-  text-decoration: none;
-}
 
-li {
-  list-style: none;
-}
-/* Header, Footer & Body */
+
+/* ===========================
+Elements
+ ============================ */
 
 body {
   margin: 0;
@@ -45,6 +41,29 @@ body {
   font-weight: 300;
   color: #000;
 }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ img{
+max-width: 100%;
+  }
+
+
+h2{
+  font-size: var(--fontSize_title)
+
+}
+
+
+/* ===========================
+Header
+ ============================ */
 
 header {
   padding: 1.5% 0;
@@ -68,21 +87,30 @@ header a {
   letter-spacing: 1.2pt;
   transition: 0.3s;
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--color_text)
 }
 
 header a:hover {
-  color: black;
+  color: var(--color_primary)
 }
 
 header .current_link {
-  color: black;
+  color: var(--color_primary)
+}
+
+header ul {
+  padding: 0;
 }
 
 header li {
   padding: 7px;
 }
 
+
+
+/* ===========================
+Footer
+ ============================ */
 footer {
   background-color: rgba(0, 0, 0, 98);
   padding: 40px 0;
@@ -95,6 +123,16 @@ footer {
 @media (max-width: 1200px) {
   footer {
     justify-content: space-around;
+  }
+  footer section {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  footer li,
+  footer h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -123,13 +161,13 @@ footer li {
 }
 
 footer li a {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color_text);
   transition: 0.3s;
   font-size: 12px;
 }
 
 footer li a:hover {
-  color: white;
+  color: var(--color_secondary);
 }
 
 footer button {
@@ -139,9 +177,9 @@ footer button {
   padding: 15px 25px;
   transition: 0.3s;
   border-radius: 25px;
-  color: black;
-  background-color: white;
-  border: 2px solid white;
+  color: var(--color_primary);
+  background-color: var(--color_secondary);
+  border: 2px solid var(--color_secondary);
   font-weight: 600;
   letter-spacing: 1.2px;
   margin-bottom: 15px;
@@ -149,12 +187,12 @@ footer button {
 
 footer button:hover,
 footer button:focus {
-  background-color: black;
-  color: white;
+  background-color: var(--color_primary);
+  color: var(--color_secondary);
 }
 
 footer p {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color_text);
   margin: 0;
   font-size: 12px;
 }
@@ -164,14 +202,19 @@ footer img {
   height: 30px;
 }
 
-/* //// Position of an element in div */
+
+/* ===========================
+Position of an element in div
+ ============================ */
 
 .centered {
   text-align: center;
   margin: 0 auto;
 }
 
-/* //// Positions of multiple elements in div */
+/* ===========================
+ Positions of multiple elements in div
+ ============================ */
 .flex-center {
   display: flex;
   align-items: center;
